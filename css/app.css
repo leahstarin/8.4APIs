@@ -5769,4 +5769,7 @@ button.close {
 img {
   max-width: 100%; }
 
+body {
+  background: url("file://PATH-TO/styles/app.scss") no repeat; }
+
 /*# sourceMappingURL=app.css.map */
