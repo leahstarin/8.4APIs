@@ -41,6 +41,7 @@ handleSignIn: function(event){
         console.log(user);
       },
       error: function(user, error) {
+        console.log(error)
         // The login failed. Check error to see why.
       }
     });
@@ -52,19 +53,19 @@ handleSignIn: function(event){
             <div className="row">
              <div className="col-sm-6">
                <form onSubmit={this.handleSignIn} id="login" className="form-signin">
-                 <h2 className="form-signin-heading">Please Login</h2>
+                 <h2 className="form-signin-heading login">Please Login</h2>
                  <input id="email-login" type="text" className="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
                  <input id="password-login" type="password" className="form-control" name="password" placeholder="Password" required=""/>
-                 <button className="btn btn-lg btn-primary btn-block" type="submit">Login!</button>
+                 <button className="btn btn-lg btn-primary btn-block submit" type="submit">Login!</button>
               </form>
            </div>
            <div className="wrapper-2">
              <div className="col-sm-6">
              <form onSubmit={this.handleSignUp} id="signup" className="form-signin">
-               <h2 className="form-signin-heading">No Account? Please Sign Up!</h2>
+               <h2 className="form-signin-heading signup">No Account? Please Sign Up!</h2>
                <input id='email' type="text" className="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
                <input id="password" type="password" className="form-control" name="password" placeholder="Password" required=""/>
-               <button className="btn btn-lg btn-primary btn-block" type="submit">Sign Up!</button>
+               <button className="btn btn-lg btn-primary btn-block signup" type="submit">Sign Up!</button>
              </form>
            </div>
          </div>
